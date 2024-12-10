@@ -211,15 +211,13 @@ renderProducts(products);
 
 document.querySelectorAll('.nav-container .pag ul li').forEach((item, index) => {
   item.addEventListener('click', () => {
-    const sections = ['.image-slider', '.gal', '.about', 'footer'];
+    const sections = ['.image-slider', '.categories-main', '.gal', ''];
     const targetSection = document.querySelector(sections[index]);
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: 'smooth' });
     }
   });
 });
-
-
 
 const checkoutButton = document.getElementById('checkout-button');
 
