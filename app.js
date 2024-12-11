@@ -31,7 +31,9 @@ function renderProducts(products) {
       productCard.classList.add('product-card');
       productCard.innerHTML = `
         <div class="icon">
-          <img src="${product.image}" alt="${product.name}">
+          <a href="detalleLibro.html?id=${product.id}">
+            <img src="${product.image}" alt="${product.name}">
+          </a>
           <button class="add-to-cart-btn" onclick="addToCart(${product.id})">Añadir al Carrito</button>
         </div>
         <h3 class="ProductName">${product.name}</h3>
@@ -45,23 +47,29 @@ function renderProducts(products) {
   }
 }
 
+
 // Función para actualizar la visibilidad de los elementos según la búsqueda
 // Función para actualizar la visibilidad de solo la sección de imágenes (slider)
 function updateVisibility(query) {
   const hasSearchQuery = query.trim() !== '';
 
-  // Seleccionar la sección del slider
+  // Seleccionar la sección del slider y los productos
   const imageSlider = document.getElementById('images-slider');
+  const detalleLibroElements = document.querySelectorAll('detalleLibro'); // Seleccionar todos los elementos con la clase 'detalleLibro'
   
-  // Si hay texto en el input, ocultar el slider; si no, mostrarlo
+  // Si hay texto en el input, ocultar el slider y los detalles de los productos; si no, mostrarlos
   imageSlider.classList.toggle('hidden', hasSearchQuery);
+  detalleLibroElements.forEach(element => {
+    element.classList.toggle('hidden', hasSearchQuery); // Ocultar o mostrar los elementos detalleLibro
+  });
 }
 
 // Evento de input en el campo de búsqueda
 searchInput.addEventListener('input', (e) => {
   filterProducts(); // Filtrar productos según lo que se escribe
-  updateVisibility(e.target.value); // Actualizar visibilidad del slider
+  updateVisibility(e.target.value); // Actualizar visibilidad del slider y los productos
 });
+
 
 
 // Evento de input en el campo de búsqueda

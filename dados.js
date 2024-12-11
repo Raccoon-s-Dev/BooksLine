@@ -5,7 +5,13 @@ const products = [
         price: 77.22,
         image: './assets/Books/M1.png',
         categoryId: 2,
-        specifications: 'Neon Genesis Evangelion Deluxe 12: Formato: Libro Físico, Autor: Yoshiyuki Sadamoto, Editorial: Ivrea, Año: 2016, Idioma: Español, N° de páginas: 180, Encuadernación: Tapa Blanda.'
+        author: 'Yoshiyuki Sadamoto',
+        editorial: 'Ivrea',
+        year: 2016,
+        language: 'Español',
+        pages: 180,
+        binding: 'Tapa Blanda',
+        synopsis: 'Una edición deluxe de la famosa serie de Evangelion, con ilustraciones exclusivas y una narrativa que mezcla ciencia ficción y drama psicológico.'
     },
     {
         id: 2,
@@ -13,7 +19,13 @@ const products = [
         price: 64.00,
         image: './assets/Books/M2.png',
         categoryId: 2,
-        specifications: 'Oyasumi Pun Pun Tomo 02: Formato: Libro Físico, Autor: Inio Asano, Editorial: Astiberri, Año: 2014, Idioma: Español, N° de páginas: 192, Encuadernación: Tapa Blanda.'
+        author: 'Inio Asano',
+        editorial: 'Astiberri',
+        year: 2014,
+        language: 'Español',
+        pages: 192,
+        binding: 'Tapa Blanda',
+        synopsis: 'La compleja y emotiva historia de Punpun, un joven que enfrenta las dificultades de la vida, el amor y la soledad en una sociedad que lo rechaza.'
     },
     {
         id: 3,
@@ -21,7 +33,13 @@ const products = [
         price: 40.50,
         image: './assets/Books/M3.png',
         categoryId: 2,
-        specifications: 'SHUUMATSU NO VALKYRIE 02: Formato: Libro Físico, Autor: Takumi Fukui, Editorial: IVREA, Año: 2020, Idioma: Español, N° de páginas: 200, Encuadernación: Tapa Blanda.'
+        author: 'Takumi Fukui',
+        editorial: 'IVREA',
+        year: 2020,
+        language: 'Español',
+        pages: 200,
+        binding: 'Tapa Blanda',
+        synopsis: 'En un mundo donde los dioses luchan contra los humanos, este volumen continúa la feroz batalla entre figuras mitológicas y guerreros legendarios.'
     },
     {
         id: 4,
@@ -29,7 +47,13 @@ const products = [
         price: 73.49,
         image: './assets/Books/P1.png',
         categoryId: 4,
-        specifications: 'El amor, las mujeres y la vida: Formato: Libro Físico, Autor: Mario Benedetti, Editorial: Alfaguara, Año: 1994, Idioma: Español, N° de páginas: 120, Encuadernación: Tapa Blanda.'
+        author: 'Mario Benedetti',
+        editorial: 'Alfaguara',
+        year: 1994,
+        language: 'Español',
+        pages: 120,
+        binding: 'Tapa Blanda',
+        synopsis: 'Una reflexión profunda sobre el amor, las mujeres y las complejidades de la vida, escrita con la prosa única de Mario Benedetti.'
     },
     {
         id: 5,
@@ -37,7 +61,13 @@ const products = [
         price: 22.73,
         image: './assets/Books/P2.png',
         categoryId: 4,
-        specifications: 'Rimas y Leyendas: Formato: Libro Físico, Autor: Gustavo Adolfo Bécquer, Editorial: Cátedra, Año: 2010, Idioma: Español, N° de páginas: 300, Encuadernación: Tapa Blanda.'
+        author: 'Gustavo Adolfo Bécquer',
+        editorial: 'Cátedra',
+        year: 2010,
+        language: 'Español',
+        pages: 300,
+        binding: 'Tapa Blanda',
+        synopsis: 'Una obra maestra del Romanticismo que reúne las famosas rimas y leyendas de Bécquer, cargadas de emoción y misterio.'
     },
     {
         id: 6,
@@ -45,7 +75,13 @@ const products = [
         price: 48.00,
         image: './assets/Books/P3.png',
         categoryId: 4,
-        specifications: 'Veinte poemas de amor y una canción desesperada: Formato: Libro Físico, Autor: Pablo Neruda, Editorial: Losada, Año: 1924, Idioma: Español, N° de páginas: 104, Encuadernación: Tapa Blanda.'
+        author: 'Pablo Neruda',
+        editorial: 'Losada',
+        year: 1924,
+        language: 'Español',
+        pages: 104,
+        binding: 'Tapa Blanda',
+        synopsis: 'Una colección de poemas que expresa los sentimientos más profundos sobre el amor y la desolación, escrita por uno de los poetas más grandes de la lengua española.'
     },
     {
         id: 7,
@@ -53,7 +89,13 @@ const products = [
         price: 66.93,
         image: './assets/Books/P4.png',
         categoryId: 4,
-        specifications: 'La Divina Comedia: Formato: Libro Físico, Autor: Dante Alighieri, Editorial: Ediciones Akal, Año: 1995, Idioma: Español, N° de páginas: 450, Encuadernación: Tapa Dura.'
+        author: 'Dante Alighieri',
+        editorial: 'Ediciones Akal',
+        year: 1995,
+        language: 'Español',
+        pages: 450,
+        binding: 'Tapa Dura',
+        synopsis: 'El poema épico de Dante Alighieri que relata el viaje a través del Infierno, el Purgatorio y el Paraíso, una alegoría de la vida y el destino humano.'
     },
     {
         id: 8,
@@ -61,7 +103,13 @@ const products = [
         price: 110.36,
         image: './assets/Books/A1.png',
         categoryId: 5,
-        specifications: 'Donde viven las musas: Antología de poemas, Autor: Varios Autores, Editorial: Varios, Año: 2020, Idioma: Español, N° de páginas: 150, Encuadernación: Tapa Blanda.'
+        author: 'Varios Autores',
+        editorial: 'Varios',
+        year: 2020,
+        language: 'Español',
+        pages: 150,
+        binding: 'Tapa Blanda',
+        synopsis: 'Una antología de textos inspiradores, que exploran la vida, la creatividad y la influencia de las musas en el arte y la literatura.'
     },
     {
         id: 9,
@@ -69,7 +117,13 @@ const products = [
         price: 82.80,
         image: './assets/Books/C1.png',
         categoryId: 3,
-        specifications: 'El Asombroso Spiderman: Comic, Autor: Stan Lee y Steve Ditko, Editorial: Marvel Comics, Año: 1962, Idioma: Español, N° de páginas: 100, Encuadernación: Tapa Blanda.'
+        author: 'Stan Lee y Steve Ditko',
+        editorial: 'Marvel Comics',
+        year: 1962,
+        language: 'Español',
+        pages: 100,
+        binding: 'Tapa Blanda',
+        synopsis: 'La primera aparición de Spider-Man, un héroe atrapado entre la responsabilidad de ser un adolescente normal y la de luchar contra el crimen.'
     },
     {
         id: 10,
@@ -77,7 +131,13 @@ const products = [
         price: 38.00,
         image: './assets/Books/L1.png',
         categoryId: 6,
-        specifications: 'La metamorfosis y otros cuentos: Formato: Libro Físico, Autor: Franz Kafka, Editorial: Varias, Año: 1946, Idioma: Español, N° de páginas: 150, Encuadernación: Tapa Blanda.'
+        author: 'Franz Kafka',
+        editorial: 'Varias',
+        year: 1946,
+        language: 'Español',
+        pages: 150,
+        binding: 'Tapa Blanda',
+        synopsis: 'La famosa obra de Kafka donde el protagonista se transforma en un insecto, junto con otros relatos de angustia y alienación.'
     },
     {
         id: 11,
@@ -85,7 +145,13 @@ const products = [
         price: 103.33,
         image: './assets/Books/N1.png',
         categoryId: 1,
-        specifications: 'Cien años de soledad (edición ilustrada): Formato: Libro Físico, Autor: Gabriel García Márquez, Editorial: Random House, Año: 2014, Idioma: Español, N° de páginas: 400, Encuadernación: Tapa Dura.'
+        author: 'Gabriel García Márquez',
+        editorial: 'Random House',
+        year: 2014,
+        language: 'Español',
+        pages: 400,
+        binding: 'Tapa Dura',
+        synopsis: 'La obra maestra de García Márquez que relata la historia de la familia Buendía a través de siete generaciones en el mítico pueblo de Macondo.'
     },
     {
         id: 12,
@@ -93,6 +159,12 @@ const products = [
         price: 63.92,
         image: './assets/Books/C2.png',
         categoryId: 6,
-        specifications: 'El Libro de Bill: Comic, Autor: Bill Watterson, Editorial: Varios, Año: 2024, Idioma: Español, N° de páginas: 120, Encuadernación: Tapa Blanda.'
+        author: 'Bill Watterson',
+        editorial: 'Varios',
+        year: 2024,
+        language: 'Español',
+        pages: 120,
+        binding: 'Tapa Blanda',
+        synopsis: 'Una colección de las tiras cómicas de Calvin y Hobbes, donde Bill Watterson reflexiona sobre la vida, la naturaleza y la infancia.'
     }
 ];
