@@ -45,16 +45,30 @@ function renderProducts(products) {
   }
 }
 
+// Función para actualizar la visibilidad de los elementos según la búsqueda
+// Función para actualizar la visibilidad de solo la sección de imágenes (slider)
 function updateVisibility(query) {
   const hasSearchQuery = query.trim() !== '';
 
-  slider.classList.toggle('hidden', hasSearchQuery);
-  categoriesMain.classList.toggle('hidden', hasSearchQuery);
-  gallerySection.classList.toggle('hidden', hasSearchQuery);
-  aboutSections.forEach(element => {
-    element.classList.toggle('hidden', hasSearchQuery);
-  });
+  // Seleccionar la sección del slider
+  const imageSlider = document.getElementById('images-slider');
+  
+  // Si hay texto en el input, ocultar el slider; si no, mostrarlo
+  imageSlider.classList.toggle('hidden', hasSearchQuery);
 }
+
+// Evento de input en el campo de búsqueda
+searchInput.addEventListener('input', (e) => {
+  filterProducts(); // Filtrar productos según lo que se escribe
+  updateVisibility(e.target.value); // Actualizar visibilidad del slider
+});
+
+
+// Evento de input en el campo de búsqueda
+searchInput.addEventListener('input', (e) => {
+  filterProducts(); // Llama a la función para filtrar los productos según la búsqueda
+  updateVisibility(e.target.value); // Llama a la función para actualizar la visibilidad
+});
 
 
 function searchProducts(query) {
