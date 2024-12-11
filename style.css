@@ -33,16 +33,18 @@ body {
   color: #fff;
   padding: 2rem 1rem;
   width: 100%;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
   margin: 0 auto;
   gap: 1.5rem;
+  max-width: 1200px;
   flex-wrap: wrap;
+  padding: 0 1rem; /* Agregado para asegurar que tenga espaciado lateral */
 }
 
 .footer-section {
@@ -113,6 +115,7 @@ body {
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0 1rem; 
   }
 
   .footer-section {
@@ -409,10 +412,7 @@ header {
   cursor: pointer;
   position: relative;
   box-sizing: border-box;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
 
@@ -1439,5 +1439,84 @@ input[type="radio"] {
 
   .informacion-producto #book-price {
     font-size: 1.1rem;
+  }
+}
+
+/* Sección principal */
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contenedor de texto y título */
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+
+/* Título */
+.about__title h1 {
+  font-size: 1.5rem; 
+  color: #333; 
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px; 
+}
+
+/* Texto de la sección */
+.about__text {
+  font-size: 1rem; 
+  text-align: left;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Imagen */
+.about__img {
+  width: 40%;
+}
+
+.about__img img {
+  width: 100%;
+  height: auto;
+  max-height: 18rem;
+  object-fit: cover;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .about__title h1 {
+    text-align: center;
+    font-size: 1.8rem; 
+  }
+
+  .about__container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .about__text {
+    font-size: 0.95rem;
+    text-align: left; 
+  }
+
+  .about__img {
+    width: 80%;
+    max-height: 14rem;
   }
 }
